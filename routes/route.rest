@@ -1,0 +1,29 @@
+GET http://localhost:5000/tierLists
+
+### 
+
+GET http://localhost:5000/tierLists/60da1f20b54a31559aff4cde
+
+###
+
+POST http://localhost:5000/tierLists
+Content-Type: application/json
+
+{
+    "albumName": "New Tyler Album",
+    "tier": "D",
+    "reason": "Because Kieran said it was garbage"
+}
+
+###
+
+DELETE http://localhost:5000/tierLists/60da24c75015315748b83003
+
+###
+
+PATCH http://localhost:5000/tierLists/60da2eacaaa7f75cf5e3a201
+Content-Type: application/json
+
+{
+    "reason": "bangers"
+}
